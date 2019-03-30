@@ -1,6 +1,6 @@
 # Tengine Build Script
 
-This is a build script for creating a build of [Tengine](http://tengine.taobao.org/). It has been written for and tested on Ubuntu 18.x It has the following features:
+This is a Bash script for building [Tengine](http://tengine.taobao.org/). It has been written for and tested on Ubuntu 18.x It has the following features:
 
 - No email or other guff
 - Non-thread pool
