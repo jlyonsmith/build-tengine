@@ -90,11 +90,6 @@ make install
 make clean
 strip -s /usr/sbin/nginx*
 
-# Install man pages
-rm -rf /usr/share/man/man8/nginx.8
-cp "man/nginx.8" /usr/share/man/man8
-gzip -f /usr/share/man/man8/nginx.8
-
 if [ -d "/etc/nginx-${today}" ]; then
   # Rename the default /etc/nginx settings directory so it's accessible as a reference to the new NGINX defaults
   mv /etc/nginx /etc/nginx-default
@@ -128,5 +123,10 @@ EOF
   systemctl enable nginx
   systemctl start nginx
 fi
+
+# Install man pages
+rm -rf /usr/share/man/man8/nginx.8
+cp "man/nginx.8" /usr/share/man/man8
+gzip -f /usr/share/man/man8/nginx.8
 
 echo "All done.";
