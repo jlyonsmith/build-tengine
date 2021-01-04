@@ -10,7 +10,7 @@ This is a Bash script for building [Tengine](http://tengine.taobao.org/). It has
 - Creates all temp directories
 - Creates a `.service` file for `systemd` integration
 
-Copy it into `/opt`, do a `chmod u+x tengine-build.sh` and run it.
+Clone the repo and run `build-tengine.sh`.
 
 ## License
 
