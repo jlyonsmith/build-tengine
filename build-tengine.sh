@@ -10,7 +10,7 @@ fi
 set -e -x
 
 # Set names of latest versions of each package
-version_tengine=tengine-2.3.0
+version_tengine=tengine-2.3.2
 source_tengine="http://tengine.taobao.org/download/"
 
 # Make a "today" variable for use in back-up filenames later
