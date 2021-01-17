@@ -1,6 +1,6 @@
 # Tengine Build Script
 
-This is a Bash script for building [Tengine](http://tengine.taobao.org/). It has been written for and tested on Ubuntu 18.x It has the following features:
+This is a Bash script for building [Tengine](http://tengine.taobao.org/). It has been written for and tested on Ubuntu 18.x and 20.x It has the following features:
 
 - No email or other guff
 - Non-thread pool
@@ -10,7 +10,7 @@ This is a Bash script for building [Tengine](http://tengine.taobao.org/). It has
 - Creates all temp directories
 - Creates a `.service` file for `systemd` integration
 
-Clone the repo and run `build-tengine.sh`.
+Clone the repo and run `build-tengine.sh`.  The script assumes you can `sudo` without entering a password.
 
 ## License
 
