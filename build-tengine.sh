@@ -78,6 +78,7 @@ cd "$version_tengine"
   --add-module=./modules/ngx_http_proxy_connect_module \
   --with-jemalloc \
   --with-http_realip_module \
+  --with-http_ssl_module \
   --without-http_empty_gif_module \
   --without-http_geo_module \
   --without-http_split_clients_module \
