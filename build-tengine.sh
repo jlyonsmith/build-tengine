@@ -10,7 +10,7 @@ fi
 set -e -x
 
 # Set names of latest versions of each package
-version_tengine=tengine-2.3.2
+version_tengine=tengine-2.4.1
 source_tengine="http://tengine.taobao.org/download/"
 
 # Make a "today" variable for use in back-up filenames later
@@ -70,7 +70,6 @@ cd "$version_tengine"
   --lock-path=/var/run/nginx.lock \
   --http-client-body-temp-path=/var/cache/nginx/client_temp \
   --http-proxy-temp-path=/var/cache/nginx/proxy_temp \
-  --http-fastcgi-temp-path=/var/cache/nginx/fastcgi_temp \
   --http-uwsgi-temp-path=/var/cache/nginx/uwsgi_temp \
   --http-scgi-temp-path=/var/cache/nginx/scgi_temp \
   --user=nginx \
@@ -79,6 +78,8 @@ cd "$version_tengine"
   --with-jemalloc \
   --with-http_realip_module \
   --with-http_ssl_module \
+  --with-ipv6 \
+  --without-http_fastcgi_module \
   --without-http_empty_gif_module \
   --without-http_geo_module \
   --without-http_split_clients_module \
