@@ -10,6 +10,7 @@ This is a Bash script for building [Tengine](http://tengine.taobao.org/). It has
 - Creates all temp directories
 - Creates a `.service` file for `systemd` integration
 - IPv6 support
+- HTTP2 support
 - No FastCGI support
 
 Clone the repo and run `build-tengine.sh`.  The script must be run as `sudo` (it will tell you.)

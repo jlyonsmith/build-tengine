@@ -81,6 +81,7 @@ cd "$version_tengine"
   --with-jemalloc \
   --with-http_realip_module \
   --with-http_ssl_module \
+  --with-http_v2_module \
   --without-http_fastcgi_module \
   --without-http_empty_gif_module \
   --without-http_geo_module \
