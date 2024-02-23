@@ -5,6 +5,9 @@ if [[ $EUID -ne 0 ]]; then
   exit 1
 fi
 
+# Stop nginx if it is running
+systemctl stop nginx
+
 # Make script exit if a simple command fails and
 # Make script print commands being executed
 set -e -x
@@ -78,7 +81,6 @@ cd "$version_tengine"
   --with-jemalloc \
   --with-http_realip_module \
   --with-http_ssl_module \
-  --with-ipv6 \
   --without-http_fastcgi_module \
   --without-http_empty_gif_module \
   --without-http_geo_module \
